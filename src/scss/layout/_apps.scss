@@ -1,0 +1,113 @@
+.section-apps {
+  position: relative;
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  margin-top: 35px;
+  background: #F7FBFF;
+  padding-top: calc(100vw * 0.2);
+
+	.container {
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    .top {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 10vw;
+      .title {
+        margin: 0; padding: 0;
+      }
+  
+      .subtitle {
+        align-self: center;
+        margin: 0; padding: 0;
+      }
+    }
+    .apps {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+      width: 100%;
+      .app {
+        width: 280px;
+        margin-right: 43px;
+        .app-icon {
+          width: 37px;
+          height: 38px;
+          &.icon1 {
+            background: url(/dist/images/icon1.svg) no-repeat center center; 
+          }
+          &.icon2 {
+            background: url(/dist/images/icon2.svg) no-repeat center center; 
+          }
+          &.icon3 {
+            background: url(/dist/images/icon3.svg) no-repeat center center; 
+          }
+          &.icon4 {
+            background: url(/dist/images/icon4.svg) no-repeat center center; 
+          }
+          &.icon5 {
+            background: url(/dist/images/icon5.svg) no-repeat center center; 
+          }
+          background-size: contain;
+          display: flex;
+        }
+        .app-title {
+          margin-top: 36px;
+          margin-bottom: 19px;
+        }
+        .app-url {
+        }
+      }
+    }
+	}
+	@media (max-width: $mobile) {
+		.container {
+      .top {
+        flex-direction: column;
+        margin-bottom: 10vw;
+        .half {
+          width: 100%;
+        }
+        .title {
+          margin: 0 auto;
+        }
+        .subtitle {
+          margin-top: 24px;
+          text-align: center;
+        }
+      }
+			.apps {
+				display: flex;
+				flex: 1;
+				flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style: none;
+				.app {
+          display: flex;
+					flex: 0.33;
+          flex-wrap: wrap;
+					margin-top: 36px;
+					margin-bottom: 36px;
+					.app-icon {
+						margin-bottom: 16px;
+						margin: 0 auto;
+					}
+					.app-title {
+            width: 100%;
+						text-align: center;
+						margin-bottom: 19px;
+					}
+					.app-url {
+						text-align: center;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+}

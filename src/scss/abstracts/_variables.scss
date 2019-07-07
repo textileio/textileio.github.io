@@ -1,0 +1,166 @@
+@font-face {
+	font-family: "Biotif-Medium";
+	src: url('/dist/fonts/Degarism Studio - Biotif-Medium.otf') format("opentype");
+}
+@font-face {
+	font-family: "Biotif-Regular";
+	src: url('/dist/fonts/Degarism Studio - Biotif-Regular.otf') format("opentype");
+}
+@font-face {
+	font-family: "Biotif-Bold";
+	src: url('/dist/fonts/Degarism Studio - Biotif-Bold.otf') format("opentype");
+}
+@font-face {
+	font-family: "Biotif-Light";
+	src: url('/dist/fonts/Degarism Studio - Biotif-Light.otf') format("opentype");
+}
+@font-face {
+	font-family: "Biotif-Book";
+	src: url('/dist/fonts/Degarism Studio - Biotif-Book.otf') format("opentype");
+}
+@font-face {
+	font-family: "Biotif-MediumItalic";
+	src: url('/dist/fonts/Degarism Studio - Biotif-MediumItalic.otf') format("opentype");
+}
+@font-face {
+	font-family: "Biotif-SemiBold";
+	src: url('/dist/fonts/Degarism Studio - Biotif-SemiBold.otf') format("opentype");
+}
+@font-face {
+	font-family: "Biotif-BookItalic";
+	src: url('/dist/fonts/Degarism Studio - Biotif-BookItalic.otf') format("opentype");
+}
+
+$small: 920px;
+$mobile: 920px;
+$medium: 1020px;
+
+$blue:#2935FF;
+$red:#FF1C3F;
+$yellow:#FFCE00;
+$pink: #FFB6D5;
+$white: #FFFFFF;
+$darkBlue: #2b35b9;
+$grey: #505275;
+$purple: #b0b7ff;
+$light: #b6b8c3;
+
+.pink {
+	color: $pink
+}
+.white {
+	color: $white
+}
+.dark-blue {
+	color: $darkBlue;
+}
+.grey {
+	color: $grey
+}
+.light {
+	color: $light
+}
+
+h1 {
+	color: $darkBlue;
+  font-family: "Biotif-Regular", Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+	font-size: calc(1px + 3.4vw);
+	@media (max-width: $medium) {
+		font-size: 42px;
+	}
+}
+
+h2 {
+	color: $darkBlue;
+  font-family: "Biotif-Regular", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+	font-size: calc(1px + 1.7vw);
+	@media (max-width: $mobile) {
+		font-size: 28px;
+	}
+}
+
+h3 {
+	color: $grey;
+  font-family: "Biotif-Regular", Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+	font-size: calc(1px + 1.25vw);
+
+	@media (max-width: $mobile) {
+		font-size: 18px;
+	}
+}
+
+h5 {
+	color: $grey;
+  font-family: "Biotif-Light", Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+	font-size: calc(1px + 1vw);
+	@media (max-width: $mobile) {
+		font-size: 18px;
+	}
+}
+
+.detail {
+	color: $purple;
+  font-family: "Biotif-Regular", Helvetica, sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 1.21;
+  letter-spacing: normal;
+	font-size: calc(1px + 1.2vw);
+	text-decoration: none;
+	@media (max-width: $mobile) {
+		font-size: 14px;
+	}
+}
+
+.navigation a {
+	margin-left: 12px;
+  font-family: "Biotif-Regular", Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: calc(1px + 1.25vw);
+	line-height: 1.56;
+	letter-spacing: normal;
+	text-decoration: none;
+}
+
+.menu a {
+  font-family: "Biotif-Regular", Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+	color: #b6b8c3;
+	cursor: pointer;
+}
+
+
+// --------------------------------------------
+// Structure ----------------------------------
+// --------------------------------------------
+$content__padding: (
+	mobile: 16px,
+	desktop:  24px
+);
+$container__width: 1080px;
+$container__width-sm: 800px;

@@ -1,0 +1,139 @@
+.section-code {
+  position: relative;
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  
+  // positions the wave svg at bottom color transition
+  padding-bottom: calc(100vw * 0.129);
+  margin-bottom: calc(100vw * -0.2);
+
+
+	.container {
+    flex-direction: row;
+    margin-bottom: 10%;
+    .left-col {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      padding-right: 10%;
+      .title {
+        margin-bottom: 30px;
+      }
+      .subheading {
+        margin-bottom: 20px;
+      }
+      .details {
+        margin-bottom: 85px;
+      }
+    }
+    .right-col {
+      .code {
+        z-index: 11;
+        width: 35vw;
+        max-width: 494px;
+        min-width: 420px;
+        height: 476px;
+        border-radius: 10px;
+        box-shadow: 0 21px 94px 0 rgba(41, 53, 255, 0.08);
+        background-color: #ffffff;
+        .header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 17px;
+          .option {
+            display: flex;
+            text-decoration: none;
+          }
+        }
+
+        pre {
+          background: white;
+          code {
+            background: white;
+            font-size: 14px;
+          }
+        }
+        .shell {
+          display: none;
+          &.active {display: flex}
+        }
+        .javascript {
+          display: none;
+          &.active {display: flex}
+        }
+        .reactnative {
+          display: none;
+          &.active {display: flex}
+        }
+        .objectivec {
+          display: none;
+          &.active {display: flex}
+        }
+        .swift {
+          display: none;
+          &.active {display: flex}
+        }
+        .java {
+          display: none;
+          &.active {display: flex}
+        }
+      }
+    }
+    .mobile-extras {
+      display: none;
+    }
+	}
+	@media (max-width: $medium) {
+		.container {
+      flex-direction: column;
+			.left-col {
+				width: 100%;
+				text-align: center;
+        padding-right: 0;
+
+        h5 {
+          margin-bottom: 20px;
+        }
+        .details {
+          margin-bottom: 45px;
+        }
+        .desktop-extras {
+          display: none;
+        }
+			}
+			.right-col {
+				width: 100%;
+        margin-bottom: 45px;
+        .code {
+          margin: 0 auto;
+        }
+			}
+      .mobile-extras {
+        display: block;
+				width: 100%;
+        text-align: center;
+        z-index: 100;
+      }
+		}
+	}
+
+	.code-svg {
+		z-index: 10;
+    width: 100vw;
+    height: 25.833vw;
+		position: absolute;
+		bottom: 0; left: 0;
+    background: url(/dist/images/code.svg) no-repeat center center; 
+    background-size: contain;
+    display: flex;
+  }
+}
+
+
+.hljs-ln-numbers {
+  color: #dedede;
+}
+

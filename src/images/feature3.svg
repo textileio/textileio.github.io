@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Desktop" transform="translate(-934.000000, -1358.000000)" stroke-width="2.88">
+                                        <g id="Group-8" transform="translate(222.000000, 935.000000)">
+                                                        <g id="Group-23" transform="translate(713.000000, 425.000000)">
+                                                                        <g id="rocket" transform="translate(1.000000, 0.000000)">
+                                                                                        <circle id="Oval" stroke="#FF1C3F" cx="22.4901818" cy="9.50981818" r="2.89163636"></circle>
+                                                                                        <path d="M10.2225455,15.6436364 L8.8817842e-16,13.6" id="Path" stroke="#FFB6D4"></path>
+                                                                                        <polyline id="Path" stroke="#FFB6D4" points="0 13.6 6.13381818 7.46618182 16.3563636 5.42109091"></polyline>
+                                                                                        <path d="M16.3563636,21.7774545 L18.4,32" id="Path" stroke="#FFB6D4"></path>
+                                                                                        <polyline id="Path" stroke="#FFB6D4" points="18.4 32 24.5338182 25.8661818 26.5789091 15.6436364"></polyline>
+                                                                                        <path d="M16.3563636,21.7774545 C16.3563636,21.7774545 22.7301818,19.4923636 28.1425455,14.08 C33.5549091,8.66763636 31.6901818,0.309818182 31.6901818,0.309818182 C31.6901818,0.309818182 23.3309091,-1.55345455 17.92,3.85745455 C12.5090909,9.26836364 10.2225455,15.6436364 10.2225455,15.6436364" id="Path" stroke="#FFB6D4"></path>
+                                                                                        <path d="M11.8705455,25.4836364 C11.9156364,22.5367273 9.46181818,20.0843636 6.51636364,20.1294545 C5.42836364,20.1454545 4.28218182,20.4901818 3.28872727,21.4836364 C-0.437818182,25.2101818 0.196363636,31.8050909 0.196363636,31.8050909 C0.196363636,31.8050909 6.79127273,32.4378182 10.5178182,28.7127273 C11.5098182,27.7178182 11.8530909,26.5716364 11.8705455,25.4836364 Z" id="Path" stroke="#FFCD00"></path>
+                                                                        </g>
+                                                        </g>
+                                        </g>
+                        </g>
+        </g>
+</svg>

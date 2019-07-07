@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Textile - Faster, cheaper, better application development through decentralized technologies</title>
+		<link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="">
+    <div class="body-wrap">
+        <header>
+					<section class="section-header">
+						<div class="wrapper">
+								<div class="collection">
+									<a class="logo" href="https://textile.io/"></a>
+									<div class="links navigation">
+											<a class="link white" href="https://twitter.com/textileio">Twitter.</a> 
+											<a class="link white" href="https://twitter.com/textileio">Github.</a> 
+											<a class="link white" href="https://twitter.com/textileio">Blog.</a> 
+									</div>
+								</div>
+						</div>
+					</section>
+					<section class="section-hero">
+						<div class="container">
+							<div class="left-col">
+								<h1 class="pink">
+									Write, deploy, and scale apps on IPFS
+								</h1>
+							</div>
+							<div class="left-col">
+								<h3 class="white">
+									Textile is a set of open source tools that provide a decentralized database, data storage, user management, and more over the IPFS network.
+								</h3>
+							</div>
+						</div>
+					</section>
+					<div class="hero-svg" ></div>
+
+					<div class="hero-svg-mobile" ></div>
+        </header>
+
+        <main>
+
+
+					<section class="section-features">
+						<div class="features-svg"></div>
+						<div class="container">
+							<h1 class="title dark-blue left-col">
+								Tools for developers
+							</h1>
+							<div class="more">
+								<h3 class="grey left-col">
+									A set of tools and trustless infrastructure for building apps and a platform to return ownership of data to your users.
+								</h3>
+								<h3  class="learn">Learn more<br/><a class="pink" href="https://docs.textile.io/">docs.textile.io →</a></h3>
+							</div>
+							<ul class="bullets">
+								<li class="bullet">
+									<div class="feature-icon feature1"></div>
+									<h2 class="feature-title dark-blue">
+										Limitless reach
+									</h2>
+									<h5 class="feature-blurb">
+										Connect anyone in the world with a high-quality experience.
+									</h5>
+								</li>
+								<li class="bullet">
+									<div class="feature-icon feature2"></div>
+									<h2 class="feature-title dark-blue">
+										Resilient storage
+									</h2>
+									<h5 class="feature-blurb">
+										Secure storage of your app's data across the IPFS network.
+									</h5>
+								</li>
+								<li class="bullet">
+									<div class="feature-icon feature3"></div>
+									<h2 class="feature-title dark-blue">
+										Faster to ship
+									</h2>
+									<h5 class="feature-blurb">
+										Ship cross-platform decentralized apps that work together over open protocols.
+									</h5>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+
+					<section class="section-code">
+						<div class="container">
+							<div class="left-col">
+								<h1 class="title dark-blue">
+									Code Example
+								</h1>
+								<h3 class="subheading grey">
+									Create encrypted, resilient, and cross-application data storage in seconds using Textile and IPFS. 
+								</h3>
+								<h5 class="details">
+									Textile threads give you the benefit of a distributed database plus easy to manage access-control, off-device apps & integrations, and hosted or self-managed recovery services. 
+								</h5>
+								<a href="https://docs.textile.io" target=_blank class="desktop-extras detail">
+									Available for iOS, Android, React Native, JavaScript and Desktop.
+								</a>
+							</div>
+							<div class="right-col">
+								<div class="code">
+
+									<div class="header menu">
+											<a href="#shell" class="option">Shell</a>
+											<a href="#javascript" class="option">JavaScript</a>
+											<a href="#reactnative" class="option">React Native</a>
+											<a href="#objectivec" class="option">Obj-C</a>
+											<a href="#swift" class="option">Swift</a>
+											<a href="#java" class="option">Android</a>
+									</div>
+									<div class="examples">
+											<pre id="shell" class="example shell active">
+												<code class="inline Bash">for row in $( textile file list thread $ID -l100000 | jq  --arg ADDRESS "$ADDRESS" -r '.items[] | select(.user.address == $ADDRESS) | .files[0].file.hash' ); do
+	START=$( textile file get $row --content | jq 'select(.event == "start")')
+
+	# If we got any results back from Start events, we can skip creating it again
+	if [ ! -z "$START" ]; then
+		echo "Game on!"
+		exit
+	fi
+
+done									
+											</code>
+										</pre>
+										<pre id="javascript" class="example javascript">
+											<code class="inline Swift">this is javascript										
+										</code>
+									</pre>
+									<pre id="reactnative" class="example reactnative">
+										<code class="inline React-Native">this is react native
+											
+									</code>
+								</pre>
+								<pre id="objectivec" class="example objectivec">
+									<code class="inline Objective-C">import Foundation
+
+@objc class Person: Entity {
+var name: String!
+var age:  Int!
+
+init(name: String, age: Int) {
+/* /* ... */ */
+}
+
+// Return a descriptive string for this person
+func description(offset: Int = 0) -> String {
+return "\(name) is \(age + offset) years old"
+}
+}
+										
+								</code>
+							</pre>
+							<pre id="swift" class="example swift">
+								<code class="inline Swift">import Foundation
+
+@objc class Person: Entity {
+var name: String!
+var age:  Int!
+
+init(name: String, age: Int) {
+/* /* ... */ */
+}
+
+// Return a descriptive string for this person
+func description(offset: Int = 0) -> String {
+return "\(name) is \(age + offset) years old"
+}
+}
+									
+							</code>
+						</pre>
+						<pre id="java" class="example java">
+							<code class="inline Java">import Foundation
+
+@objc class Person: Entity {
+var name: String!
+var age:  Int!
+
+init(name: String, age: Int) {
+/* /* ... */ */
+}
+
+// Return a descriptive string for this person
+func description(offset: Int = 0) -> String {
+return "\(name) is \(age + offset) years old"
+}
+}
+								
+						</code>
+					</pre>
+									</div>
+								</div>
+							</div>
+							<a href="https://docs.textile.io" target=_blank class="mobile-extras detail">
+									Available for iOS, Android, React Native, JavaScript and Desktop.
+							</a>
+						</div>
+						<div class="code-svg"></div>
+					</section>
+
+					<section class="section-apps">
+						<div class="container">
+								<div class="top">
+									<div class="half">
+										<h1 class="title pink">
+											Apps for users
+										</h1>
+									</div>
+									<div class="half">
+										<h5 class="subtitle">
+											Our tools help developers build a new world of totally custom, decentralized, interoperable, and unstoppable apps.
+										</h5>
+									</div>
+								</div>
+								<ul class="apps">
+									<li class="app">
+										<div class="app-icon icon1">
+										</div>
+										<h2 class="app-title dark-blue">Anytype</h2>
+										<a class="app-url detail" target=_blank href="anytype.io">anytype.io</a>
+									</li>
+									<li class="app">
+											<div class="app-icon icon2">
+											</div>
+										<h2 class="app-title dark-blue">CareChain</h2>
+										<a class="app-url detail" target=_blank href="carechain.io">carechain.io</a>
+									</li>
+									<li class="app">
+											<div class="app-icon icon3">
+											</div>
+										<h2 class="app-title dark-blue">Photos</h2>
+										<a class="app-url detail" target=_blank href="textile.photos">textile.photos</a>
+									</li>
+									<li class="app">
+											<div class="app-icon icon4">
+											</div>
+										<h2 class="app-title dark-blue">Noet</h2>
+										<a class="app-url detail" target=_blank href="noet.io">noet.io</a>
+									</li>
+									<li class="app">
+											<div class="app-icon icon5">
+											</div>
+										<h2 class="app-title dark-blue">Permaweb</h2>
+										<a class="app-url detail" target=_blank href="permaweb.com">permaweb.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+        </main>
+
+        <footer class="section-footer">
+						<div class="wrapper">
+								<div class="collection">
+									<a class="logo" href="https://textile.io/"></a>
+									<div class="links navigation">
+											<a class="link grey" href="https://twitter.com/textileio">Twitter.</a> 
+											<a class="link grey" href="https://twitter.com/textileio">Github.</a> 
+											<a class="link grey" href="https://twitter.com/textileio">Blog.</a> 
+									</div>
+								</div>
+						</div>
+        </footer>
+    </div>
+
+		<link rel="stylesheet"
+		href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/github.min.css">
+		<script src="dist/js/main.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.min.js"></script>
+		<script>
+			hljs.initHighlightingOnLoad();
+			hljs.initLineNumbersOnLoad();
+
+
+			window.addEventListener("load", function() {
+			// store tabs variable
+			var examples = document.querySelectorAll("div.examples > .example");
+			function myTabClicks(tabClickEvent) {
+				for (var i = 0; i < examples.length; i++) {
+					console.log('removing, i')
+					examples[i].classList.remove("active");
+				}
+				var clickedTab = tabClickEvent.currentTarget;
+				clickedTab.classList.add("active");
+				tabClickEvent.preventDefault();
+
+				var anchorReference = tabClickEvent.target;
+				var activePaneId = anchorReference.getAttribute("href");
+				var activePane = document.querySelector(activePaneId);
+				activePane.classList.add("active");
+			}
+			var buttons = document.querySelectorAll("div.menu > a");
+			for (i = 0; i < buttons.length; i++) {
+				console.log('adding')
+				buttons[i].addEventListener("click", myTabClicks)
+			}
+		});
+
+		</script>
+</body>
+</html>
