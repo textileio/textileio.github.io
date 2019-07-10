@@ -61,12 +61,8 @@
           margin-bottom: 19px;
         }
         .app-url {
-           opacity: 0.4;
-           color: $blue;
-           transition: opacity .2s ease-in-out;
-           &:hover {
-              opacity: 0.7;
-           }
+           color: lighten($blue, 20%);
+           @include link(lighten($blue, 20%));
         }
       }
     }
