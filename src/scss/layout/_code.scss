@@ -45,6 +45,7 @@
           flex-direction: row;
           justify-content: space-between;
           padding: 17px;
+			    border-bottom: 1px solid #eef6ff;
           .option {
             display: flex;
             text-decoration: none;
@@ -65,6 +66,18 @@
             background: white;
             font-size: 14px;
             line-height: 1.75;
+            .hljs-ln-code {
+              color: #ec6ea2;
+              .hljs-keyword {
+                color: #2935ff;
+              }
+              .hljs-string {
+                color: #55cf88;
+              }
+              .hljs-literal {
+                color: #ff1c3f;
+              }
+            }
           }
         }
         .shell {
