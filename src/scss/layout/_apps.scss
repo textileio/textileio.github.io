@@ -19,7 +19,7 @@
       .title {
         margin: 0; padding: 0;
       }
-  
+
       .subtitle {
         align-self: center;
         margin: 0; padding: 0;
@@ -30,7 +30,8 @@
       flex-direction: row;
       justify-content: space-between;
       list-style: none;
-      width: 100%;
+		width: 100%;
+		margin-bottom: 10vw;
       .app {
         width: 280px;
         margin-right: 43px;
@@ -38,19 +39,19 @@
           width: 37px;
           height: 38px;
           &.icon1 {
-            background: url(/dist/images/icon1.svg) no-repeat center center; 
+            background: url(/dist/images/icon1.svg) no-repeat center center;
           }
           &.icon2 {
-            background: url(/dist/images/icon2.svg) no-repeat center center; 
+            background: url(/dist/images/icon2.svg) no-repeat center center;
           }
           &.icon3 {
-            background: url(/dist/images/icon3.svg) no-repeat center center; 
+            background: url(/dist/images/icon3.svg) no-repeat center center;
           }
           &.icon4 {
-            background: url(/dist/images/icon4.svg) no-repeat center center; 
+            background: url(/dist/images/icon4.svg) no-repeat center center;
           }
           &.icon5 {
-            background: url(/dist/images/icon5.svg) no-repeat center center; 
+            background: url(/dist/images/icon5.svg) no-repeat center center;
           }
           background-size: contain;
           display: flex;
@@ -60,6 +61,12 @@
           margin-bottom: 19px;
         }
         .app-url {
+           opacity: 0.4;
+           color: $blue;
+           transition: opacity .2s ease-in-out;
+           &:hover {
+              opacity: 0.7;
+           }
         }
       }
     }
