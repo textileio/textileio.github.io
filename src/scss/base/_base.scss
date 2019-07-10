@@ -12,6 +12,10 @@ html {
 
 body {
 	background: color(bg, 1); /* Fallback for when there is no custom background color defined. */
+	// Important to make sure there is no bottom scrollbar because of the svg.
+	width: 100%;
+	max-width: 100vw;
+	overflow-x: hidden;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
@@ -19,7 +23,7 @@ body {
 header {
 	width: 100vw;
 	background-size: contain;
-	
+
 	@media (max-width: $mobile) {
 		height: 208vw;
 		width: 100vw;
@@ -39,7 +43,7 @@ header {
 			height: 208vw;
 			width: 100vw;
 			position: absolute;
-			background: url(/dist/images/mobile-header.svg) no-repeat center center; 
+			background: url(/dist/images/mobile-header.svg) no-repeat center center;
 			background-size: cover;
 			top: 0; left: 0;
 			@media (min-width: 400px) {
@@ -59,7 +63,7 @@ header {
 			width: 100vw;
 			position: absolute;
 			top: 0; left: 0;
-			background: url(/dist/images/header.svg) no-repeat center center; 
+			background: url(/dist/images/header.svg) no-repeat center center;
 			background-size: cover;
 		}
 		.hero-svg-mobile {
@@ -130,7 +134,7 @@ figure {
 }
 
 figcaption {
-	// @include font-size(7, mobile, true, true);
+   // @include font-size(7, mobile, true, true);
 	padding: 8px 0;
 }
 
@@ -165,4 +169,32 @@ td {
 	&:last-child {
 		padding-right: 0;
 	}
+}
+
+@mixin link($color) {
+   & {
+      text-decoration: none;
+      position: relative;
+   }
+
+   &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $color;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s;
+   }
+
+   &:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+   }
 }

@@ -38,12 +38,17 @@ $medium: 1020px;
 $blue:#2935FF;
 $red:#FF1C3F;
 $yellow:#FFCE00;
+$hotPink: #ec6ea2;
 $pink: #FFB6D5;
 $white: #FFFFFF;
 $darkBlue: #2b35b9;
 $grey: #505275;
 $purple: #b0b7ff;
 $light: #b6b8c3;
+
+.hot-pink {
+	color: $hotPink;
+}
 
 .pink {
 	color: $pink
