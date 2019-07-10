@@ -83,6 +83,47 @@ footer {
 	width: 100vw;
 }
 
+.shape {
+	position: absolute;
+	background-size: cover;
+	z-index: 0;
+	&.shape1 {
+		width: 31px;
+		height: 67px;
+		top: 70px;
+		left: 50%;
+		background: url(/dist/images/shape1.svg) no-repeat center center;
+	}
+	&.shape2 {
+		width: 20px;
+		height: 16px;
+		top: 255px;
+		left: 5vw;
+		background: url(/dist/images/shape2.svg) no-repeat center center;
+	}
+	&.shape3 {
+		width: 31px;
+		height: 31px;
+		top: 0px;
+		right: 24vw;
+		background: url(/dist/images/shape3.svg) no-repeat center center;
+	}
+	@media (max-width: $mobile) {
+		&.shape1 {
+			top: -100px;
+			left: 10vw;
+		}
+		&.shape2 {
+			top: 50px;
+			left: 50%;
+		}
+		&.shape3 {
+			display: none;
+		}
+	}
+
+}
+
 hr {
 	border: 0;
 	// @include divider();
