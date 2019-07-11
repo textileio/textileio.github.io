@@ -5,8 +5,56 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Textile - Faster, better, cheaper application development through decentralized technologies</title>
+	<title>Textile - Reinventing user data storage to help upgrade the internet</title>
+
+	<meta itemprop="name" content="textile.io">
+	<meta itemprop="description" content="Reinventing user data storage to help upgrade the internet.">
+	<meta itemprop="image" content="statics/images/screenshots/gplus_cover.png">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@textileio">
+	<meta name="twitter:title" content="textile.io">
+	<meta name="twitter:description" content="Reinventing user data storage to help upgrade the internet.">
+	<meta name="twitter:creator" content="@TextileIO">
+	<meta name="twitter:image:src" content="statics/images/screenshots/tw_cover.png">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Textile - Reinventing user data storage to help upgrade the internet"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="http://www.textile.io"/>
+	<meta property="og:image" content="/dist/images/screenshots/fb_cover.png"/>
+	<meta property="og:description" content="Reinventing user data storage to help upgrade the internet."/>
+	<meta property="og:site_name" content="textile.io"/>
+	<meta name="msapplication-TileColor" content="#ffd435">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/dist/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/dist/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/dist/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/dist/images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/dist/images/favicon/safari-pinned-tab.svg" color="#374dff">
+
 	<link rel="stylesheet" href="dist/css/style.css">
+
+	<!-- Matomo -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function () {
+			var u = "//analytics.textile.photos/";
+			_paq.push(['setTrackerUrl', u + 'piwik.php']);
+			_paq.push(['setSiteId', '2']);
+			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+			g.type = 'text/javascript';
+			g.async = true;
+			g.defer = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore(g, s);
+		})();
+	</script>
+<!-- End Matomo Code -->
 </head>
 
 <body class="">
@@ -319,7 +367,6 @@ Textile.instance().threads.add(config);
 			}
 			var buttons = document.querySelectorAll("div.menu > a");
 			for (i = 0; i < buttons.length; i++) {
-				console.log('adding')
 				buttons[i].addEventListener("click", myTabClicks)
 			}
 		});
