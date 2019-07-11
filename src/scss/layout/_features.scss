@@ -45,6 +45,9 @@
 				.bullet {
 					width: 280px;
 					margin-right: 43px;
+					a {
+						text-decoration: none;
+					}
 					.feature-icon {
 						width: 35px;
 						height: 35px;
@@ -95,6 +98,9 @@
 					flex-direction: row;
 					margin-top: 36px;
 					margin-bottom: 36px;
+					a {
+						text-decoration: none;
+					}
 					.feature-icon {
 						width: 35px;
 						height: 35px;
