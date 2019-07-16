@@ -40,7 +40,8 @@
         // margin-bottom: 85px;
       }
       .developers {
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 30px;
         a {
           @include link($hotPink);
           font-family: 'Biotif-Regular';
