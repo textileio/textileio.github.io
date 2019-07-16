@@ -34,10 +34,18 @@
         margin-bottom: 30px;
       }
       .subheading {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
       }
       .details {
         // margin-bottom: 85px;
+      }
+      .developers {
+        margin: 0;
+        a {
+          @include link($hotPink);
+          font-family: 'Biotif-Regular';
+          font-weight: 500;
+        }
       }
     }
     .right-col {
