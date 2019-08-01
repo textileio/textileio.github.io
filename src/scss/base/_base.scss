@@ -86,7 +86,7 @@ footer {
 .shape {
 	position: absolute;
 	background-size: cover;
-	z-index: 0;
+	z-index: -10;
 	&.shape1 {
 		width: 31px;
 		height: 67px;
