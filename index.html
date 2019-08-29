@@ -34,6 +34,8 @@
 	<link rel="manifest" href="/dist/images/favicon/site.webmanifest">
 	<link rel="mask-icon" href="/dist/images/favicon/safari-pinned-tab.svg" color="#374dff">
 
+	<script src="dist/js/lax.min.js"></script>
+
 	<link rel="stylesheet" href="dist/css/style.css">
 
 	<!-- Matomo -->
@@ -87,18 +89,18 @@
 					</div>
 				</div>
 			</section>
-			<div class="hero-svg"></div>
+			<div class="hero-svg lax" data-lax-translate-y="0 0, 6000 2000"></div>
 
-			<div class="hero-svg-mobile"></div>
+			<div class="hero-svg-mobile lax" data-lax-translate-y="0 0, 6000 400"></div>
 		</header>
 
 		<main>
 
 
 			<section class="section-features">
-				<div class="shape shape1"></div>
-				<div class="shape shape2"></div>
-				<div class="features-svg"></div>
+				<div class="shape shape1 lax" data-lax-translate-y="0 0, 6000 2000"></div>
+				<div class="shape shape2 lax" data-lax-translate-y="0 0, 6000 2000"></div>
+				<div class="features-svg lax" data-lax-translate-y="0 0, 6000 2000"></div>
 				<div class="container">
 					<h1 class="title dark-blue left-col">
 						Tools for developers
@@ -151,7 +153,7 @@
 
 
 			<section class="section-code">
-				<div class="shape shape3"></div>
+				<div class="shape shape3 lax" data-lax-translate-y="0 0, 6000 2000" ></div>
 				<div class="container">
 					<div class="left-col">
 						<h1 class="title dark-blue">
@@ -161,7 +163,7 @@
 							Create encrypted, resilient, and cross-application data storage in seconds using Textile and IPFS.
 						</h3>
 						<h5 class="details">
-							Textile's decentralized databases let you quickly sync any type of app data between users or across devices. 
+							Textile's decentralized databases let you quickly sync any type of app data between users or across devices.
 						</h5>
 					</div>
 					<div class="right-col">
@@ -344,6 +346,16 @@ Textile.instance().threads.add(config);
 	<script>
 		hljs.initHighlightingOnLoad();
 		hljs.initLineNumbersOnLoad();
+
+		window.onload = function() {
+			// Parallax Code
+			lax.setup() // init
+			const updateLax = () => {
+				lax.update(window.scrollY)
+				window.requestAnimationFrame(updateLax)
+			}
+			window.requestAnimationFrame(updateLax)
+		}
 
 
 		window.addEventListener("load", function () {
