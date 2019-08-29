@@ -34,6 +34,8 @@
 	<link rel="manifest" href="/dist/images/favicon/site.webmanifest">
 	<link rel="mask-icon" href="/dist/images/favicon/safari-pinned-tab.svg" color="#374dff">
 
+	<script src="dist/js/lax.min.js"></script>
+
 	<link rel="stylesheet" href="dist/css/style.css">
 
 	<!-- Matomo -->
@@ -65,9 +67,9 @@
 					<div class="collection">
 						<a class="logo" href="https://textile.io/"></a>
 						<div class="links navigation">
-							<a class="link white" href="https://twitter.com/textileio">Twitter.</a>
-							<a class="link white" href="https://github.com/textileio">Github.</a>
-							<a class="link white" href="https://medium.com/textileio">Blog.</a>
+							<a class="link white" href="https://blog.textile.io/">Blog.</a>
+							<a class="link white" href="https://docs.textile.io/">Docs.</a>
+							<a class="link white" href="https://community.textile.io">Community.</a>
 						</div>
 					</div>
 				</div>
@@ -87,18 +89,18 @@
 					</div>
 				</div>
 			</section>
-			<div class="hero-svg"></div>
+			<div class="hero-svg lax" data-lax-translate-y="0 0, 6000 2000"></div>
 
-			<div class="hero-svg-mobile"></div>
+			<div class="hero-svg-mobile lax" data-lax-translate-y="0 0, 6000 400"></div>
 		</header>
 
 		<main>
 
 
 			<section class="section-features">
-				<div class="shape shape1"></div>
-				<div class="shape shape2"></div>
-				<div class="features-svg"></div>
+				<div class="shape shape1 lax" data-lax-translate-y="0 0, 6000 2000"></div>
+				<div class="shape shape2 lax" data-lax-translate-y="0 0, 6000 2000"></div>
+				<div class="features-svg lax" data-lax-translate-y="0 0, 6000 2000"></div>
 				<div class="container">
 					<h1 class="title dark-blue left-col">
 						Tools for developers
@@ -150,7 +152,7 @@
 
 
 			<section class="section-code">
-				<div class="shape shape3"></div>
+				<div class="shape shape3 lax" data-lax-translate-y="0 0, 6000 2000" ></div>
 				<div class="container">
 					<div class="left-col">
 						<h1 class="title dark-blue">
@@ -329,8 +331,8 @@ Textile.instance().threads.add(config);
 				<a class="logo" href="https://textile.io/"></a>
 				<div class="links navigation">
 					<a class="link grey" href="https://twitter.com/textileio">Twitter.</a>
+					<a class="link grey" href="https://slack.textile.io/">Slack.</a>
 					<a class="link grey" href="https://github.com/textileio">Github.</a>
-					<a class="link grey" href="https://medium.com/textileio">Blog.</a>
 				</div>
 			</div>
 		</div>
@@ -345,6 +347,16 @@ Textile.instance().threads.add(config);
 	<script>
 		hljs.initHighlightingOnLoad();
 		hljs.initLineNumbersOnLoad();
+
+		window.onload = function() {
+			// Parallax Code
+			lax.setup() // init
+			const updateLax = () => {
+				lax.update(window.scrollY)
+				window.requestAnimationFrame(updateLax)
+			}
+			window.requestAnimationFrame(updateLax)
+		}
 
 
 		window.addEventListener("load", function () {
