@@ -86,7 +86,7 @@ footer {
 .shape {
 	position: absolute;
 	background-size: cover;
-	z-index: -10;
+	z-index: 0;
 	&.shape1 {
 		width: 31px;
 		height: 67px;
@@ -105,8 +105,9 @@ footer {
 		width: 31px;
 		height: 31px;
 		top: 0px;
-		right: 24vw;
+		right: 18%;
 		background: url(/dist/images/shape3.svg) no-repeat center center;
+		z-index: 1;
 	}
 	@media (max-width: $mobile) {
 		&.shape1 {
