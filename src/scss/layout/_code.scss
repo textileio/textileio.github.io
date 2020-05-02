@@ -89,10 +89,18 @@
           margin: 0;
           background: white;
           code {
+            flex: 1;
+            max-width: 100%;
+            overflow-y: scroll;
             background: white;
             font-size: 14px;
             line-height: 1.75;
+            &::-webkit-scrollbar {
+              display: none;
+            }
             .hljs-ln-code {
+              flex: 1;
+              max-width: 100%;
               color: #ec6ea2;
               .hljs-keyword {
                 color: #2935ff;
@@ -122,7 +130,7 @@
           display: none;
           &.active {display: flex}
         }
-        .swift {
+        .dart {
           display: none;
           &.active {display: flex}
         }

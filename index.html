@@ -68,8 +68,8 @@
 						<a class="logo" href="https://textile.io/"></a>
 						<div class="links navigation">
 							<a class="link white" href="https://blog.textile.io/">Blog.</a>
-							<a class="link white" href="https://docs.textile.io/">Docs.</a>
-							<a class="link white" href="https://community.textile.io">Community.</a>
+							<a class="link white" href="https://slack.textile.io/">Slack.</a>
+							<a class="link white" href="https://docs.textile.io">Docs.</a>
 						</div>
 					</div>
 				</div>
@@ -83,8 +83,7 @@
 					</div>
 					<div class="left-col">
 						<h3 class="white">
-							Textile is a set of open source tools that provide a decentralized database, remote storage, user
-							management, and more over the IPFS network.
+							Textile is a set of open source tools that provide a decentralized database, IPFS-based storage, content hosting, and more over <a class="almostWhite nounderline" href="https://libp2p.io/" target="_blank">Libp2p</a>, <a class="almostWhite nounderline" href="https://ipfs.io/" target="_blank">IPFS</a>, and <a class="almostWhite nounderline" href="https://filecoin.io/" target="_blank">Filecoin</a>.
 						</h3>
 					</div>
 				</div>
@@ -107,61 +106,55 @@
 					</h1>
 					<div class="more">
 						<h3 class="grey left-col">
-							Textile provides a set of tools and trustless infrastructure for building apps and a platform to return ownership of data to your users.
+							Textile provides a set of tools and trustless infrastructure for building apps that harness decentralized protocols and return ownership of data to users.
 						</h3>
 						<h3 class="learn grey">Learn more<br /><a class="hot-pink"
-								href="https://docs.textile.io/">docs.textile.io →</a></h3>
+								href="https://blog.textile.io/">blog.textile.io →</a></h3>
 					</div>
 					<ul class="bullets">
 						<li class="bullet">
-							<a href="">
-								<div class="feature-icon feature1"></div>
-								<h2 class="feature-title dark-blue">
-									Encrypted messaging
-								</h2>
-								<h5 class="feature-blurb">
-									Connect anyone in the world with a high-quality, encrypted, p2p sharing.
-								</h5>
-							</a>
+							<div class="feature-icon feature1"></div>
+							<h2 class="feature-title dark-blue">
+								Scalable IPFS
+							</h2>
+							<h4 class="feature-blurb">
+								Our <a href="#platforms">APIs and libraries</a> give developers tools to build better data storage and networking across mobile, web, and backend applications. 
+							</h4>
 						</li>
 						<li class="bullet">
-							<a href="https://docs.textile.io/concepts/cafes/">
-								<div class="feature-icon feature2"></div>
-								<h2 class="feature-title dark-blue">
-									Resilient storage
-								</h2>
-								<h5 class="feature-blurb">
-									Store your app's data on Textile cafes across the IPFS network.
-								</h5>
-							</a>
+							<div class="feature-icon feature2"></div>
+							<h2 class="feature-title dark-blue">
+								Familiar APIs
+							</h2>
+							<h4 class="feature-blurb">
+								Our libraries are easy to try and quick to learn. If you're familiar with S3 or MongoDB, you already understand <a href="#buckets">Buckets</a> and <a href="#threads">Threads</a>.
+							</h4>
 						</li>
 						<li class="bullet">
-							<a href="https://docs.textile.io/#integrate-into-your-apps">
-								<div class="feature-icon feature3"></div>
-								<h2 class="feature-title dark-blue">
-									Cross platform
-								</h2>
-								<h5 class="feature-blurb">
-									Ship decentralized apps that work together over open protocols.
-								</h5>
-							</a>
+							<div class="feature-icon feature3"></div>
+							<h2 class="feature-title dark-blue">
+								Web hosting
+							</h2>
+							<h4 class="feature-blurb">
+								Textile <a href="#buckets">Buckets</a> help you and your team publish dynamic or static content in seconds with DNS integration, CI support, <a href="https://blog.textile.io/tag/buckets/" target="_blank">and more</a>. 
+							</h4>
 						</li>
 					</ul>
 				</div>
 			</section>
 
 
-			<section class="section-code">
+			<section id="platforms" class="section-code">
 				<div class="container">
 					<div class="left-col">
 						<h1 class="title dark-blue">
 							Easy to Use
 						</h1>
 						<h3 class="subheading grey">
-							Create encrypted, resilient, and cross-application data storage in seconds using Textile and IPFS.
+							Create encrypted, resilient, and cross-application data storage in seconds.
 						</h3>
 						<h5 class="details">
-							Textile's decentralized databases let you quickly sync any type of app data between users or across devices.
+							Threads let you quickly sync any type of app data between users or across devices.
 						</h5>
 						<h5 class="developers">
 							<a class="hot-pink link" href="https://slack.textile.io/">Join our developer community →</a>
@@ -174,90 +167,84 @@
 								<a href="#shell" class="option">Shell</a>
 								<a href="#javascript" class="option">Web</a>
 								<a href="#reactnative" class="option active">React Native</a>
-								<a href="#objectivec" class="option">Obj-C</a>
-								<a href="#swift" class="option">Swift</a>
+								<a href="#dart" class="option">Dart</a>
 								<a href="#java" class="option">Android</a>
 							</div>
 							<div class="examples">
 								<pre id="shell" class="example shell">
-												<code class="inline Bash">for row in $( textile file list thread $ID -l100000 | jq  --arg ADDRESS "$ADDRESS" -r '.items[] | select(.user.address == $ADDRESS) | .files[0].file.hash' ); do
-	START=$( textile file get $row --content | jq 'select(.event == "start")')
+												<code class="inline Shell">~/dev> tree homepage/
+homepage/
+├── index.html
+├── js
+    └── app.js
 
-	# If we got any results back from Start events, we can skip creating it again
-	if [ ! -z "$START" ]; then
-		echo "Game on!"
-		exit
-	fi
+1 directories, 2 files
 
-done
+~/dev> textile buckets push homepage/* homepage
+✔ Add 2 files? Press ENTER to confirm: █
+> Pushing homepage/index.html to homepage/index.html
+> Pushing homepage/js/app.js to homepage/js/app.js
+> Success! Pushed 2 files to homepage
+> Path /ipfs/QmSNWjbDkafwxWUGWTyP1ko4J1CW2WeNfeoiCuTUW2YnDY/
 											</code>
 										</pre>
 								<pre id="javascript" class="example javascript">
-											<code class="inline JavaScript">await textile.threads.add(
-	"chat",
-	undefined,
-	"your.bundle.id.version.Chat",
-	"open",
-	"shared",
-	["P7X3gZus5H15tWCxk4oP6EVsgAM9vwUfCyepAKw49QuRyPYs"]
-)</code>
+											<code class="inline JavaScript">let api = new textile.API({
+		token: 'APP_TOKEN',
+		deviceId: 'DEVICE_ID'
+})
+
+let client = new Client(api.threadsConfig)
+let store = client.newStore()
+await this.client.registerSchema(store.id, 'Folder2P', schema)
+const found = await this.client.modelFind(this.finderID, 'Folder2P', {})
+console.debug('found:', found.entitiesList.length)
+# found: 3</code>
 									</pre>
 								<pre id="reactnative" class="example reactnative active">
-										<code class="inline JavaScript">const threadKey = 'your.bundle.id.version.Chat'
-const threadName = 'Chat'
-const config = {
-	key: threadKey,
-	name: threadName,
-	type: Thread.Type.OPEN,
-	sharing: Thread.Sharing.SHARED,
-	force: false,
-	members: ["P7X3gZus5H15tWCxk4oP6EVsgAM9vwUfCyepAKw49QuRyPYs"]
-}
-const newTarget = await textile.threads.add(config)
+										<code class="inline JavaScript">let api = new textile.API({
+		token: 'APP_TOKEN',
+		deviceId: 'DEVICE_ID'
+})
+
+let client = new Client(api.threadsConfig)
+let store = client.newStore()
+await this.client.registerSchema(store.id, 'Folder2P', schema)
+const found = await this.client.modelFind(this.finderID, 'Folder2P', {})
+console.debug('found:', found.entitiesList.length)
+# found: 3
 									</code>
 								</pre>
-								<pre id="objectivec" class="example objectivec">
-									<code class="inline Objective-C">AddThreadConfig *config = [[AddThreadConfig alloc] init];
-config.key = @"your.bundle.id.version.Chat";
-config.name = @"Chat";
-config.type = Thread_Type_Open;
-config.sharing = Thread_Sharing_Shared;
-config.whitelistArray = [@[@"P7X3gZus5H15tWCxk4oP6EVsgAM9vwUfCyepAKw49QuRyPYs"] mutableCopy];
-NSError *error;
-Thread *thread = [Textile.instance.threads add:config error:&error];
-if (error) {
-	// Do something with this error
-} else {
-	// Success!
-}
-								</code>
-							</pre>
-								<pre id="swift" class="example swift">
-								<code class="inline Swift">let config = AddThreadConfig()
-config.key = "your.bundle.id.version.Chat"
-config.name = "Chat"
-config.type = Thread_Type.open
-config.sharing = Thread_Sharing.shared
-config.whitelistArray = ["P7X3gZus5H15tWCxk4oP6EVsgAM9vwUfCyepAKw49QuRyPYs"]
-var error: NSError?
-let thread = Textile.instance().threads.add(config, error: &error)
-if (error != nil) {
-	// Do something with this error
-} else {
-	// Success!
-}
-							</code>
+
+								<pre id="dart" class="example dart">
+								<code class="inline Dart">import 'package:textile/textile.dart' as textile;
+import 'package:threads_client/threads_client.dart' as threads;
+
+const APP_TOKEN = '<app token>';
+const DEVICE_ID = '<uuid>';
+
+void main(List<String> args) async {
+	final config = textile.ThreadsConfig(APP_TOKEN, DEVICE_ID);
+	final client = threads.Client(config: config);
+	final store = await client.newStore();
+	print('New store $store');
+}</code>
 						</pre>
 								<pre id="java" class="example java">
-							<code class="inline Java">AddThreadConfig config = AddThreadConfig.newBuilder()
-	.setKey("your.bundle.id.version.Chat")
-	.setName("Chat")
-	.setType(Thread.Type.OPEN)
-	.setSharing(Thread.Sharing.SHARED)
-	.addWhitelist("P7X3gZus5H15tWCxk4oP6EVsgAM9vwUfCyepAKw49QuRyPYs")
-	.build();
-Textile.instance().threads.add(config);
-
+							<code class="inline Java">import io.textile.threads;
+import io.textile.threads_grpc.*;
+public class App {
+	public void example() throws Exception {
+		Client client = new Client("localhost", 6006);
+		client.Connect();
+		String storeId = client.NewStoreSync();
+		client.StartSync(storeId);
+		client.RegisterSchemaSync(storeId, "Person", jsonStr);
+		ModelCreateReply reply = client.ModelCreateSync(
+			storeId, "Person", data
+		);
+	}
+}
 						</code>
 					</pre>
 							</div>
@@ -266,7 +253,7 @@ Textile.instance().threads.add(config);
 				</div>
 				<div class="full-extras">
 						<a href="https://docs.textile.io" target=_blank class="detail">
-							Available for iOS, Android, React Native, JavaScript and Desktop.
+							Available for Go, JavaScript, Dart, React Native, and Android.
 						</a>
 				</div>
 				<div class="code-svg lax"></div>
@@ -278,13 +265,12 @@ Textile.instance().threads.add(config);
 					<div class="top">
 						<div class="half">
 							<h1 class="title pink">
-								Apps for users
+								Tools for developers
 							</h1>
 						</div>
 						<div class="half">
 							<h5 class="subtitle">
-								Our tools help developers build a new world of totally custom, decentralized, interoperable, and
-								unstoppable apps.
+								Interoperable, open-source, and easy to use tools to build unstoppable apps and safe-guard the world's data. 
 							</h5>
 						</div>
 					</div>
@@ -292,32 +278,38 @@ Textile.instance().threads.add(config);
 						<li class="app">
 							<div class="app-icon icon1">
 							</div>
-							<h2 class="app-title dark-blue">Anytype</h2>
-							<a class="app-url detail" target=_blank href="https://anytype.io">anytype.io</a>
+							<h2 id="buckets" class="app-title">
+								<a class="dark-blue" target=_blank href="https://docs.textile.io/hub/buckets/">Buckets</a>
+							</h2>
+							<a class="app-url detail" target=_blank href="https://docs.textile.io/hub/buckets/buckets/">
+								Dynamic content management 
+								for teams. Host websites, blogs, 
+								and data on IPFS.
+							</a>
 						</li>
 						<li class="app">
 							<div class="app-icon icon2">
 							</div>
-							<h2 class="app-title dark-blue">CareChain</h2>
-							<a class="app-url detail" target=_blank href="https://carechain.io">carechain.io</a>
+							<h2 id="threads" class="app-title">
+								<a class="dark-blue" target=_blank href="https://docs.textile.io/threads/introduction">ThreadsDB</a>
+							</h2>
+							<a class="app-url detail" target=_blank href="https://docs.textile.io/threads/introduction">
+								A distributed, scalable, and 
+								flexible database solution for 
+								decentralized applications.
+							</a>
 						</li>
 						<li class="app">
 							<div class="app-icon icon3">
 							</div>
-							<h2 class="app-title dark-blue">Photos</h2>
-							<a class="app-url detail" target=_blank href="https://textile.photos">textile.photos</a>
-						</li>
-						<li class="app">
-							<div class="app-icon icon4">
-							</div>
-							<h2 class="app-title dark-blue">Noet</h2>
-							<a class="app-url detail" target=_blank href="https://noet.io">noet.io</a>
-						</li>
-						<li class="app">
-							<div class="app-icon icon5">
-							</div>
-							<h2 class="app-title dark-blue">Permaweb</h2>
-							<a class="app-url detail" target=_blank href="https://github.com/permaweb">permaweb.io</a>
+							<h2 id="filecoin" class="app-title">
+								<a class="dark-blue" target=_blank href="https://docs.textile.io/powergate/introduction/">Powergate</a>
+							</h2>
+							<a class="app-url detail" target=_blank href="https://docs.textile.io/powergate/introduction">
+								Drop-in Filecoin API 
+								and management system for 
+								your critical data.
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -340,9 +332,11 @@ Textile.instance().threads.add(config);
 	</footer>
 	</div>
 
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/github.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css">
 	<script src="dist/js/main.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/shell.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/dart.min.js"></script>
 	<script
 		src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.min.js"></script>
 	<script>
