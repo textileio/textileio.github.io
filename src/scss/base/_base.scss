@@ -43,7 +43,7 @@ header {
 			height: 208vw;
 			width: 100vw;
 			position: absolute;
-			background: url(/dist/images/mobile-header.svg) no-repeat center center;
+			background: url(/images/mobile-header.svg) no-repeat center center;
 			background-size: cover;
 			top: 0; left: 0;
 			@media (min-width: 400px) {
@@ -63,7 +63,7 @@ header {
 			width: 100vw;
 			position: absolute;
 			top: 0; left: 0;
-			background: url(/dist/images/header.svg) no-repeat center center;
+			background: url(/images/header.svg) no-repeat center center;
 			background-size: cover;
 			transform: translateZ(-0.5px) scale(1.5);
 		}
@@ -93,21 +93,21 @@ footer {
 		height: 67px;
 		top: 70px;
 		left: 50%;
-		background: url(/dist/images/shape1.svg) no-repeat center center;
+		background: url(/images/shape1.svg) no-repeat center center;
 	}
 	&.shape2 {
 		width: 20px;
 		height: 16px;
 		top: 255px;
 		left: 5vw;
-		background: url(/dist/images/shape2.svg) no-repeat center center;
+		background: url(/images/shape2.svg) no-repeat center center;
 	}
 	&.shape3 {
 		width: 31px;
 		height: 31px;
 		top: 0px;
 		right: 18%;
-		background: url(/dist/images/shape3.svg) no-repeat center center;
+		background: url(/images/shape3.svg) no-repeat center center;
 		z-index: 100;
 	}
 	@media (max-width: $mobile) {
