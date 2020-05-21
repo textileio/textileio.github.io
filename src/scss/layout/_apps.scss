@@ -39,19 +39,19 @@
           width: 37px;
           height: 38px;
           &.icon1 {
-            background: url(/dist/images/icon1.svg) no-repeat center center;
+            background: url(/images/icon1.svg) no-repeat center center;
           }
           &.icon2 {
-            background: url(/dist/images/icon2.svg) no-repeat center center;
+            background: url(/images/icon2.svg) no-repeat center center;
           }
           &.icon3 {
-            background: url(/dist/images/icon3.svg) no-repeat center center;
+            background: url(/images/icon3.svg) no-repeat center center;
           }
           &.icon4 {
-            background: url(/dist/images/icon4.svg) no-repeat center center;
+            background: url(/images/icon4.svg) no-repeat center center;
           }
           &.icon5 {
-            background: url(/dist/images/icon5.svg) no-repeat center center;
+            background: url(/images/icon5.svg) no-repeat center center;
           }
           background-size: contain;
           display: flex;
@@ -59,10 +59,13 @@
         .app-title {
           margin-top: 36px;
           margin-bottom: 19px;
+          a {
+            text-decoration: none;
+          }
         }
         .app-url {
            color: lighten($blue, 20%);
-           @include link(lighten($blue, 20%));
+           @include longlink(lighten($blue, 20%));
         }
       }
     }
@@ -104,6 +107,9 @@
             width: 100%;
 						text-align: center;
 						margin-bottom: 19px;
+            a {
+              text-decoration: none;
+            }
 					}
 					.app-url {
 						text-align: center;
