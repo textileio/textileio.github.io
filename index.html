@@ -38,25 +38,10 @@
 
 	<link rel="stylesheet" href="dist/css/style.css">
 
-	<!-- Matomo -->
-	<script type="text/javascript">
-		var _paq = _paq || [];
-		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function () {
-			var u = "//analytics.textile.photos/";
-			_paq.push(['setTrackerUrl', u + 'piwik.php']);
-			_paq.push(['setSiteId', '2']);
-			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-			g.type = 'text/javascript';
-			g.async = true;
-			g.defer = true;
-			g.src = u + 'piwik.js';
-			s.parentNode.insertBefore(g, s);
-		})();
+	<script src="https://cdn.usefathom.com/3.js" site="BKVVUUBR"></script>
+	<script>
+			window.fathom || document.write('<script src="https://grouse.textile.io/core.js"><\/script>');
 	</script>
-<!-- End Matomo Code -->
 </head>
 
 <body class="">
@@ -291,7 +276,7 @@ public class App {
 							<div class="app-icon icon2">
 							</div>
 							<h2 id="threads" class="app-title">
-								<a class="dark-blue" target=_blank href="https://docs.textile.io/threads/introduction">ThreadsDB</a>
+								<a class="dark-blue" target=_blank href="https://docs.textile.io/threads/introduction">ThreadDB</a>
 							</h2>
 							<a class="app-url detail" target=_blank href="https://docs.textile.io/threads/introduction">
 								A distributed, scalable, and 
