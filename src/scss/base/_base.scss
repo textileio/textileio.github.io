@@ -59,13 +59,13 @@ header {
 		width: 100vw;
 		.hero-svg {
 			z-index: -1;
-			height: calc(0.5555 * 100vw);
+			height: 55.55vw;
 			width: 100vw;
 			position: absolute;
 			top: 0; left: 0;
 			background: url(/images/header.svg) no-repeat center center;
 			background-size: cover;
-			transform: translateZ(-0.5px) scale(1.5);
+
 		}
 		.hero-svg-mobile {
 			display: none;
