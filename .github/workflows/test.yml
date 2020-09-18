@@ -20,7 +20,7 @@ jobs:
         key: ${{ secrets.TEXTILEIO_ORG_ACCOUNT_KEY }}
         secret: ${{ secrets.TEXTILEIO_ORG_ACCOUNT_SECRET }}
         bucket: 'homepage'
-          thread: ${{ secrets.TEXTILEIO_ORG_BUCKET_THREAD }}
+        thread: ${{ secrets.TEXTILEIO_ORG_BUCKET_THREAD }}
         path: 'dist'
         pattern: '**/*'
     - run: echo "bucket - ${{ steps.bucket.outputs.key }}"
