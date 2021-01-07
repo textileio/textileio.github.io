@@ -1,0 +1,37 @@
+//
+
+// Breakpoints
+$breakpoints: (
+  phone: 319px,
+  large-phone: 375px,
+  phone-x: 420px,
+  xlarge-phone: 480px,
+  xxlarge-phone: 514px,
+  tablet-down: 767px,
+  tablet: 768px,
+  tablet-x: 992px,
+  large-tablet: 1024px,
+  desktop: 1200px,
+  container: 1210px,
+  desktop-x: 1300px,
+  large-desktop: 1400px,
+);
+
+// Colors
+$bg-color: #F7FBFF;
+$text-color: #505275;
+$navy-blue-color: #2F3550;
+$pink-color: #FF1C3F;
+$white-color: #FFFFFF;
+$black-color: #000000;
+$blue-color: #1F2CAA;
+$main-blue-color: #2935FF;
+$gray-color: #C4C4C4;
+$main-gray-color: #828696;
+$dark-gray-color: #979797;
+$green-color: #55CF87;
+$input-color: #D9E3EF;
+$border-color: #B0B7FF;
+
+// Transitions
+$transition-03: all .3s ease-in-out;
