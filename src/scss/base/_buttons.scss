@@ -1,0 +1,49 @@
+@import "../abstracts/variables";
+
+.cta-signup {
+  background-color: $darkBlue;
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 8px;
+  color: $white;
+  width: auto;
+  font-family: "Biotif-Regular", Arial, sans-serif;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: all 0.5s;
+  &:after {
+    transition: all 0.5s;
+    content: " →";
+    margin-right: -28px;
+    opacity: 0;
+  }
+  &:hover {
+    background-color: $blue;
+    &:after {
+      opacity: 1;
+    }
+  }
+  &--disabled {
+    background-color: $light;
+    pointer-events: none;
+  }
+  &--white {
+    margin-top: 30px;
+    max-width: 250px;
+    color: $blue;
+    background-color: $white;
+    &:hover {
+      background-color: $pink;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+  @media (max-width: $mobile) {
+    &--white {
+      width: 100%;
+    }
+    align-self: center;
+  }
+}

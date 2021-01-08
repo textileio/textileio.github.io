@@ -1,5 +1,4 @@
-@import "abstracts/variables",
-        'abstracts/include-media';
+@import "abstracts/variables", "abstracts/include-media";
 
 /*--------------------------------------------------------------
 1.0 Normalize
@@ -13,6 +12,8 @@
 --------------------------------------------------------------*/
 @import "base/base";
 
+@import "base/buttons";
+
 @import "base/helpers";
 
 @import "layout/header";
@@ -20,8 +21,6 @@
 @import "layout/hero";
 
 @import "layout/features";
-
-@import "layout/code";
 
 @import "layout/apps";
 
