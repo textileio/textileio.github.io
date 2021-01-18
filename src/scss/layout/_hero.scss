@@ -15,12 +15,20 @@
   @media (max-width: $mobile) {
     justify-content: center;
     align-content: center;
+    &__try {
+      color: $white;
+      margin: 20px 0 10px 0;
+      text-align: center;
+      background-color: $blue;
+      padding: 10px 0;
+      border-radius: 5px;
+    }
     .container {
       display: flex;
       flex-direction: column;
       align-content: center;
       justify-content: center;
-      height: 340px;
+      height: auto;
       width: 90vw;
       .left-col {
         width: 100%;

@@ -65,7 +65,7 @@ header {
     width: 100vw;
     .hero-svg {
       z-index: -1;
-      height: 58vw;
+      height: 60vw;
       width: 100vw;
       position: absolute;
       top: 0;
@@ -161,10 +161,6 @@ li > ol {
 dl {
   margin-top: 0;
   margin-bottom: 24px;
-}
-
-dt {
-  // @include font-weight(bold);
 }
 
 dd {
