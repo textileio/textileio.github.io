@@ -2,50 +2,49 @@
 
 .container,
 .container-sm {
-	width: 70vw;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
+  width: 70vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 
-	.half {
-		width: 50%;
-		display: flex;
-		flex-direction: row;
-	}
-	.left-col {
-		width: 60%;
-		display: flex;
-		flex-direction: row;
-	}
-	.right-col {
-		width: 38%;
-		display: flex;
-		flex-direction: row;
-	}
+  .half {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  .left-col {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+  }
+  .right-col {
+    width: 38%;
+    display: flex;
+    flex-direction: row;
+  }
 
-	@media (max-width: $medium) {
-		width: 83vw;
-	}
+  @media (max-width: $medium) {
+    width: 83vw;
+  }
 }
 .wrapper {
-	width: 83vw;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
+  width: 83vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .wrapper,
 .container {
-	max-width: 1440;
+  max-width: 1440;
 }
 
 .container {
-
-    .container-sm {
-		max-width: $container__width-sm;
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .container-sm {
+    max-width: $container__width-sm;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

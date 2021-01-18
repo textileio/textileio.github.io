@@ -1,3 +1,5 @@
+@import "../abstracts/variables";
+
 .section-features {
   position: relative;
   display: flex;
@@ -131,31 +133,40 @@
 }
 
 .managed-infra {
+  color: $white;
+  filter: saturate(1);
   &--divider {
-    color: $grey;
+    color: $yellow;
+    margin-top: 10vh;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
   }
   &--signup {
+    display: flex;
+    align-items: center;
     width: 30%;
   }
 
   &--title {
+    color: $pink;
+    border-top: 1px solid #ffffff26;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
   }
   &--features {
     font-size: calc(1px + 1.2vw);
+    display: flex;
     ul {
-      width: 50%;
+      width: 100%;
       padding: 0;
       li {
         list-style-type: none;
         margin: 20px 40px 20px 0;
         &::before {
           content: "✓ ";
-          color: $blue;
+          color: $pink;
         }
       }
     }

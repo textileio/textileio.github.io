@@ -85,9 +85,18 @@
     </script>
   </head>
 
-  <body class="">
+  <body>
     <div class="body-wrap">
       <header>
+        <div class="header-callout">
+          <div class="header-callout__content">
+            Sign up for the <span>Dedicated Infrastructure's </span> early
+            access
+            <a class="header-callout__learn-more" href="#managed-infra">
+              Learn more</a
+            >
+          </div>
+        </div>
         <section class="section-header">
           <div class="wrapper">
             <div class="collection">
@@ -106,8 +115,8 @@
           <div class="container">
             <div class="left-col">
               <h1 class="pink">Write, deploy, and scale apps on IPFS</h1>
-			</div>
-			
+            </div>
+
             <div class="left-col">
               <h3 class="white">
                 Textile is a set of open source tools that provide a
@@ -131,92 +140,88 @@
                   target="_blank"
                   >Filecoin</a
                 >.
-			  </h3>
-			</div>
-			<a
-				class="cta-signup cta-signup--white"
-				href="#"
-			  >
-				 Sign Up
-			  </a>
-			
+              </h3>
+            </div>
+            <span class="section-hero__try">Try Textile free in the hub!</span>
+            <a class="cta-signup cta-signup--white" href="#">Sign Up Now</a>
           </div>
         </section>
-        <div class="hero-svg lax" data-lax-translate-y="0 0, 6000 600"></div>
+        <div class="hero-svg lax" data-lax-translate-y="0 0, 5200 600"></div>
 
         <div
           class="hero-svg-mobile lax"
           data-lax-translate-y="0 0, 6000 400"
         ></div>
       </header>
-
       <main>
+        <section class="section-apps">
+          <div class="container">
+            <ul class="apps">
+              <li class="app">
+                <div class="app-icon icon1"></div>
+                <h2 id="buckets" class="app-title">
+                  <a
+                    class="dark-blue"
+                    target="_blank"
+                    href="https://docs.textile.io/hub/buckets/"
+                    >Buckets</a
+                  >
+                </h2>
+                <a
+                  class="app-url detail"
+                  target="_blank"
+                  href="https://docs.textile.io/hub/buckets/"
+                >
+                  Dynamic content management for teams. Host websites, blogs,
+                  and data on IPFS.
+                </a>
+              </li>
+              <li class="app">
+                <div class="app-icon icon2"></div>
+                <h2 id="threads" class="app-title">
+                  <a
+                    class="dark-blue"
+                    target="_blank"
+                    href="https://docs.textile.io/threads/introduction"
+                    >ThreadDB</a
+                  >
+                </h2>
+                <a
+                  class="app-url detail"
+                  target="_blank"
+                  href="https://docs.textile.io/threads/introduction"
+                >
+                  A distributed, scalable, and flexible database solution for
+                  decentralized applications.
+                </a>
+              </li>
+              <li class="app">
+                <div class="app-icon icon3"></div>
+                <h2 id="filecoin" class="app-title">
+                  <a
+                    class="dark-blue"
+                    target="_blank"
+                    href="https://docs.textile.io/powergate/introduction/"
+                    >Powergate</a
+                  >
+                </h2>
+                <a
+                  class="app-url detail"
+                  target="_blank"
+                  href="https://docs.textile.io/powergate/introduction"
+                >
+                  Drop-in Filecoin API and management system for your critical
+                  data.
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-		<section class="section-apps">
-			<div class="container">
-			  <ul class="apps">
-				<li class="app">
-				  <div class="app-icon icon1"></div>
-				  <h2 id="buckets" class="app-title">
-					<a
-					  class="dark-blue"
-					  target="_blank"
-					  href="https://docs.textile.io/hub/buckets/"
-					  >Buckets</a
-					>
-				  </h2>
-				  <a
-					class="app-url detail"
-					target="_blank"
-					href="https://docs.textile.io/hub/buckets/"
-				  >
-					Dynamic content management for teams. Host websites, blogs,
-					and data on IPFS.
-				  </a>
-				</li>
-				<li class="app">
-				  <div class="app-icon icon2"></div>
-				  <h2 id="threads" class="app-title">
-					<a
-					  class="dark-blue"
-					  target="_blank"
-					  href="https://docs.textile.io/threads/introduction"
-					  >ThreadDB</a
-					>
-				  </h2>
-				  <a
-					class="app-url detail"
-					target="_blank"
-					href="https://docs.textile.io/threads/introduction"
-				  >
-					A distributed, scalable, and flexible database solution for
-					decentralized applications.
-				  </a>
-				</li>
-				<li class="app">
-				  <div class="app-icon icon3"></div>
-				  <h2 id="filecoin" class="app-title">
-					<a
-					  class="dark-blue"
-					  target="_blank"
-					  href="https://docs.textile.io/powergate/introduction/"
-					  >Powergate</a
-					>
-				  </h2>
-				  <a
-					class="app-url detail"
-					target="_blank"
-					href="https://docs.textile.io/powergate/introduction"
-				  >
-					Drop-in Filecoin API and management system for your critical
-					data.
-				  </a>
-				</li>
-			  </ul>
-			</div>
-		  </section>
-
-        <section class="section-features managed-infra">
+        <section
+          id="managed-infra"
+          class="section-features managed-infra animated__blue-bg"
+        >
           <div
             class="shape shape1 lax"
             data-lax-translate-y="0 0, 6000 2000"
@@ -226,74 +231,73 @@
             data-lax-translate-y="0 0, 6000 2000"
           ></div>
           <div
+            class="shape shape3 lax"
+            data-lax-translate-y="0 0, 6000 2000"
+          ></div>
+          <div
             class="features-svg lax"
             data-lax-translate-y="0 0, 6000 2000"
           ></div>
+
           <div class="container">
             <p class="managed-infra--divider">Dedicated Infrastructure</p>
-            <h1 class="dark-blue left-col managed-infra--title">
-              Managed Powergate
-            </h1>
+            <h1 class="managed-infra--title">Hosted Filecoin</h1>
             <div class="more managed-infra--group">
-              <div class="grey left-col managed-infra--features">
+              <div class="managed-infra--features">
                 <ul>
-                  <li>Managed Lotus</li>
-                  <li>Managed Powergate</li>
-                  <li>Managed IPFS</li>
+                  <li>Dedicated Lotus node</li>
+                  <li>Dedicated Powergate for Application Development</li>
+                  <li>Filecoin Deal Notification</li>
                   <li>Detailed Monitoring</li>
                 </ul>
                 <ul>
-                  <li>Integrated Stack Alerting</li>
-                  <li>Integrated Deal Notification</li>
+                  <li>Stack Alerting</li>
                   <li>Advanced Security Settings</li>
+                  <li>Backups & Disaster Recovery</li>
                   <li>One Week Trial</li>
                 </ul>
               </div>
-			  <div class="managed-infra--signup">
+              <div class="managed-infra--signup">
                 <a
                   class="cta-signup"
+                  target="_blank"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSe6zLx6PC9BDw3swKn1rPNbVFVgfIxZVFgabuWTnb0MSddl4A/viewform"
                 >
-				Request Early Access
+                  Request Early Access
                 </a>
               </div>
             </div>
 
+            <h1 class="managed-infra--title">Hosted IPFS</h1>
             <div class="more managed-infra--group">
-              <div>
-                <h1 class="dark-blue managed-infra--title">Managed Buckets</h1>
-              </div>
-			  <div class="managed-infra--signup">
-                <p class="callout--trial">
-				  <p class="callout--trial">Coming soon</p>
-                </p>
-                <a
-                  class="cta-signup cta-signup--disabled"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSe6zLx6PC9BDw3swKn1rPNbVFVgfIxZVFgabuWTnb0MSddl4A/viewform"
-                >
-				Request Early Access
-                </a>
-              </div>
-            </div>
-
-            <div class="more managed-infra--group">
-              <div>
-                <h1 class="dark-blue managed-infra--title">Managed Threads</h1>
+              <div class="managed-infra--features">
+                <ul>
+                  <li>Dedicated IPFS node & gateway</li>
+                  <li>
+                    Dedicated ThreadDB node & gateway for application
+                    development
+                  </li>
+                  <li>Dedicated Buckets API for flexible object storage</li>
+                  <li>Dedicated Pinning API for blockchain development</li>
+                  <li>Detailed Monitoring</li>
+                  <li>Stack Alerting</li>
+                  <li>Advanced Security Settings</li>
+                  <li>Backups & Disaster Recovery</li>
+                  <li>One Week Trial</li>
+                </ul>
               </div>
               <div class="managed-infra--signup">
-                <p class="callout--trial">Coming soon</p>
                 <a
-                  class="cta-signup cta-signup--disabled"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSe6zLx6PC9BDw3swKn1rPNbVFVgfIxZVFgabuWTnb0MSddl4A/viewform"
+                  class="cta-signup"
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdX18GJ-EdRnpRRZH0iX7VJ0RtPU7hvSfYtRNdJc9Evkzm_CA/viewform"
                 >
-                  Request Aarly Access
+                  Request Early Access
                 </a>
               </div>
             </div>
           </div>
         </section>
-
-        
       </main>
 
       <footer class="section-footer">
@@ -339,6 +343,23 @@
         };
         window.requestAnimationFrame(updateLax);
       };
+      // smoth scroll
+      const links = document.querySelectorAll(".header-callout__content a");
+
+      for (const link of links) {
+        link.addEventListener("click", clickHandler);
+      }
+      console.log(links);
+      function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        const offsetTop = document.querySelector(href).offsetTop;
+
+        scroll({
+          top: offsetTop,
+          behavior: "smooth",
+        });
+      }
     </script>
   </body>
 </html>

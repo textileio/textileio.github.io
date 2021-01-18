@@ -65,7 +65,7 @@ header {
     width: 100vw;
     .hero-svg {
       z-index: -1;
-      height: 55.55vw;
+      height: 58vw;
       width: 100vw;
       position: absolute;
       top: 0;
@@ -94,6 +94,7 @@ footer {
   position: absolute;
   background-size: cover;
   z-index: -1;
+  opacity: 0.5;
   &.shape1 {
     width: 31px;
     height: 67px;
@@ -111,10 +112,9 @@ footer {
   &.shape3 {
     width: 31px;
     height: 31px;
-    top: 0px;
+    top: 400px;
     right: 18%;
     background: url(/images/shape3.svg) no-repeat center center;
-    z-index: 100;
   }
   @media (max-width: $mobile) {
     &.shape1 {
