@@ -1,0 +1,19 @@
+@import "./include-media";
+
+.animated__blue-bg {
+  background: linear-gradient(216deg, black, $darkBlue);
+  background-size: 400% 400%;
+  animation: animation__blue-bg 4s ease infinite;
+}
+
+@keyframes animation__blue-bg {
+  0% {
+    background-position: 0% 48%;
+  }
+  50% {
+    background-position: 100% 53%;
+  }
+  100% {
+    background-position: 0% 48%;
+  }
+}

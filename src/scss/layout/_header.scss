@@ -1,49 +1,86 @@
+@import "../abstracts/variables";
+
+header {
+  .header-callout {
+    background-color: $darkerBlue;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    &__content {
+      width: 83vw;
+      color: $purpleLight;
+      span {
+        font-weight: bold;
+        color: $white;
+      }
+    }
+    &__learn-more {
+      margin-left: 10px;
+      color: $yellow;
+      text-decoration: none;
+      &:after {
+        margin-left: -15px;
+        transition: all 0.5s;
+        content: " →";
+        opacity: 0;
+      }
+      &:hover {
+        &::after {
+          margin-left: 0;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
 .section-header {
-	width: 100vw;
-	.wrapper {
-		height: 15vw;
-		.collection {
-			width: 60%;
-			height: 100%;
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: space-between;
-			.logo {
-				height: calc(0.385 * 9.4vw);
-				width: 9.4vw;
-				background: url(/images/logo.png) no-repeat center center;
-				background-size: contain;
-				display: flex;
-			}
-			.links {
-				display: flex;
-				justify-self: flex-end;
-				align-items: center;
-				.link {
-					margin-left: 12px;
-					@include link(#fff);
-				}
-			}
-		}
-	}
-	@media (max-width: $mobile) {
-		.wrapper {
-			margin-bottom: 20px;
-			.collection {
-				margin-top: 20px;
-				width: 100%;
-				.logo {
-					height: 40px;
-					width: 128px;
-				}
-				.links {
-					.link {
-						margin-left: 10px;
-						font-size: 14px;
-					}
-				}
-			}
-		}
-	}
+  width: 100vw;
+  .wrapper {
+    height: 12vw;
+    .collection {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        height: calc(0.385 * 9.4vw);
+        width: 9.4vw;
+        background: url("/images/logo.png") no-repeat center / contain;
+        background-size: contain;
+        display: flex;
+      }
+      .links {
+        display: flex;
+        justify-self: flex-end;
+        align-items: center;
+        .link {
+          margin-left: 12px;
+          @include link(#fff);
+        }
+      }
+    }
+  }
+  @media (max-width: $mobile) {
+    .wrapper {
+      margin-bottom: 20px;
+      .collection {
+        margin-top: 20px;
+        width: 100%;
+        .logo {
+          height: 40px;
+          width: 128px;
+        }
+        .links {
+          .link {
+            margin-left: 10px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 }

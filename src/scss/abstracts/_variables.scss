@@ -1,34 +1,35 @@
 @font-face {
-	font-family: "Biotif-Medium";
-	src: url('/fonts/Degarism Studio - Biotif-Medium.otf') format("opentype");
+  font-family: "Biotif-Medium";
+  src: url("/fonts/Degarism Studio - Biotif-Medium.otf") format("opentype");
 }
 @font-face {
-	font-family: "Biotif-Regular";
-	src: url('/fonts/Degarism Studio - Biotif-Regular.otf') format("opentype");
+  font-family: "Biotif-Regular";
+  src: url("/fonts/Degarism Studio - Biotif-Regular.otf") format("opentype");
 }
 @font-face {
-	font-family: "Biotif-Bold";
-	src: url('/fonts/Degarism Studio - Biotif-Bold.otf') format("opentype");
+  font-family: "Biotif-Bold";
+  src: url("/fonts/Degarism Studio - Biotif-Bold.otf") format("opentype");
 }
 @font-face {
-	font-family: "Biotif-Light";
-	src: url('/fonts/Degarism Studio - Biotif-Light.otf') format("opentype");
+  font-family: "Biotif-Light";
+  src: url("/fonts/Degarism Studio - Biotif-Light.otf") format("opentype");
 }
 @font-face {
-	font-family: "Biotif-Book";
-	src: url('/fonts/Degarism Studio - Biotif-Book.otf') format("opentype");
+  font-family: "Biotif-Book";
+  src: url("/fonts/Degarism Studio - Biotif-Book.otf") format("opentype");
 }
 @font-face {
-	font-family: "Biotif-MediumItalic";
-	src: url('/fonts/Degarism Studio - Biotif-MediumItalic.otf') format("opentype");
+  font-family: "Biotif-MediumItalic";
+  src: url("/fonts/Degarism Studio - Biotif-MediumItalic.otf")
+    format("opentype");
 }
 @font-face {
-	font-family: "Biotif-SemiBold";
-	src: url('/fonts/Degarism Studio - Biotif-SemiBold.otf') format("opentype");
+  font-family: "Biotif-SemiBold";
+  src: url("/fonts/Degarism Studio - Biotif-SemiBold.otf") format("opentype");
 }
 @font-face {
-	font-family: "Biotif-BookItalic";
-	src: url('/fonts/Degarism Studio - Biotif-BookItalic.otf') format("opentype");
+  font-family: "Biotif-BookItalic";
+  src: url("/fonts/Degarism Studio - Biotif-BookItalic.otf") format("opentype");
 }
 
 $small: 920px;
@@ -36,144 +37,146 @@ $mobile: 920px;
 $medium: 1020px;
 $large: 1200px;
 
-$blue:#2935FF;
-$red:#FF1C3F;
-$yellow:#FFCE00;
+$blue: #2935ff;
+$red: #ff1c3f;
+$yellow: #ffce00;
 $hotPink: #ec6ea2;
-$pink: #FFB6D5;
-$white: #FFFFFF;
-$almostWhite: #EEE;
+$pink: #ffb6d5;
+$white: #ffffff;
+$almostWhite: #eeeeee;
 $darkBlue: #2b35b9;
+$darkerBlue: #101566;
 $grey: #505275;
 $purple: #b0b7ff;
+$purpleLight: #ecedff;
 $light: #b6b8c3;
 
 .hot-pink {
-	color: $hotPink;
+  color: $hotPink;
 }
 
 .pink {
-	color: $pink
+  color: $pink;
 }
 .white {
-	color: $white
+  color: $white;
 }
 .almostWhite {
-	color: $almostWhite
+  color: $almostWhite;
 }
 .dark-blue {
-	color: $darkBlue;
+  color: $darkBlue;
 }
 .grey {
-	color: $grey
+  color: $grey;
 }
 .light {
-	color: $light
+  color: $light;
 }
 
 .nounderline {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-	color: $darkBlue;
+  color: $darkBlue;
   font-family: "Biotif-Regular", Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-	font-size: calc(1px + 3.4vw);
-	@media (max-width: $medium) {
-		font-size: 42px;
-	}
+  font-size: calc(1px + 3.4vw);
+  @media (max-width: $medium) {
+    font-size: 42px;
+  }
 }
 
 h2 {
-	color: $darkBlue;
+  color: $darkBlue;
   font-family: "Biotif-Regular", Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-	font-size: calc(1px + 1.7vw);
-	@media (max-width: $mobile) {
-		font-size: 28px;
-	}
+  font-size: calc(1px + 1.7vw);
+  @media (max-width: $mobile) {
+    font-size: 28px;
+  }
 }
 
 h3 {
-	color: $grey;
+  color: $grey;
   font-family: "Biotif-Regular", Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.56;
   letter-spacing: normal;
-	font-size: calc(1px + 1.25vw);
+  font-size: calc(1px + 1.25vw);
 
-	@media (max-width: $mobile) {
-		font-size: 18px;
-	}
+  @media (max-width: $mobile) {
+    font-size: 18px;
+  }
 }
 
 h4 {
-	color: $grey;
+  color: $grey;
   font-family: "Biotif-Light", Helvetica, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.56;
   letter-spacing: normal;
-	font-size: calc(1px + 1.3vw);
-	@media (max-width: $mobile) {
-		font-size: 18px;
-	}
-	a {
-		color: $blue;
-	}
+  font-size: calc(1px + 1.3vw);
+  @media (max-width: $mobile) {
+    font-size: 18px;
+  }
+  a {
+    color: $blue;
+  }
 }
 
 h5 {
-	color: $grey;
+  color: $grey;
   font-family: "Biotif-Light", Helvetica, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.56;
   letter-spacing: normal;
-	font-size: calc(1px + 1vw);
-	@media (max-width: $mobile) {
-		font-size: 18px;
-	}
-	a {
-		color: $blue;
-	}
+  font-size: calc(1px + 1vw);
+  @media (max-width: $mobile) {
+    font-size: 18px;
+  }
+  a {
+    color: $blue;
+  }
 }
 
 .detail {
-	color: $purple;
+  color: $purple;
   font-family: "Biotif-Regular", Helvetica, sans-serif;
-	font-weight: 500;
-	font-style: italic;
-	line-height: 1.21;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.21;
   letter-spacing: normal;
-	font-size: calc(1px + 1.2vw);
-	text-decoration: none;
-	@media (max-width: $mobile) {
-		font-size: 14px;
-	}
+  font-size: calc(1px + 1.2vw);
+  text-decoration: none;
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
 }
 
 .navigation a {
-	margin-left: 12px;
+  margin-left: 12px;
   font-family: "Biotif-Regular", Helvetica, sans-serif;
-	font-weight: 600;
-	font-size: calc(1px + 1.25vw);
-	line-height: 1.56;
-	letter-spacing: normal;
-	text-decoration: none;
+  font-weight: 600;
+  font-size: calc(1px + 1.25vw);
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-decoration: none;
 }
 
 .menu a {
@@ -184,17 +187,16 @@ h5 {
   font-stretch: normal;
   line-height: 2;
   letter-spacing: normal;
-	color: #b6b8c3;
-	cursor: pointer;
+  color: #b6b8c3;
+  cursor: pointer;
 }
-
 
 // --------------------------------------------
 // Structure ----------------------------------
 // --------------------------------------------
 $content__padding: (
-	mobile: 16px,
-	desktop:  24px
+  mobile: 16px,
+  desktop: 24px,
 );
 $container__width: 1080px;
 $container__width-sm: 800px;
