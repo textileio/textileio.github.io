@@ -49,7 +49,7 @@ header {
       .logo {
         height: calc(0.385 * 9.4vw);
         width: 9.4vw;
-        background: url("/images/logo.png") no-repeat center / contain;
+        background: url("../images/logo.png") no-repeat center / contain;
         background-size: contain;
         display: flex;
       }

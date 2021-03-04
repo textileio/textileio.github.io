@@ -29,6 +29,7 @@
     "watch:images": "onchange \"src/images\" -- run-s build:images"
   },
   "devDependencies": {
+    "@textile/buck-util": "1.0.4",
     "autoprefixer": "^9.0.1",
     "browser-sync": "^2.12.8",
     "eslint": "^7.17.0",
