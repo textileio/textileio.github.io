@@ -90,11 +90,10 @@
       <header>
         <div class="header-callout">
           <div class="header-callout__content">
-            🤩 We're <span>hiring!</span> 
-            <!-- TODO: get this link to work, ha -->
-            <!-- <a class="header-callout__learn-more" href="#managed-infra">
-              Learn more</a
-            > -->
+            🤩 We are <span>hiring!</span> 
+            <a class="header-callout__learn-more" href="https://boards.greenhouse.io/textile">
+              Current job openings</a
+            >
           </div>
         </div>
         <section class="section-header">
@@ -309,33 +308,6 @@
       }
       hljs.initHighlightingOnLoad();
       hljs.initLineNumbersOnLoad();
-
-      window.onload = function () {
-        // Parallax Code
-        lax.setup(); // init
-        const updateLax = () => {
-          lax.update(window.scrollY);
-          window.requestAnimationFrame(updateLax);
-        };
-        window.requestAnimationFrame(updateLax);
-      };
-      // smoth scroll
-      const links = document.querySelectorAll(".header-callout__content a");
-
-      for (const link of links) {
-        link.addEventListener("click", clickHandler);
-      }
-      console.log(links);
-      function clickHandler(e) {
-        e.preventDefault();
-        const href = this.getAttribute("href");
-        const offsetTop = document.querySelector(href).offsetTop;
-
-        scroll({
-          top: offsetTop,
-          behavior: "smooth",
-        });
-      }
     </script>
   </body>
 </html>
