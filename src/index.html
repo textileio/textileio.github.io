@@ -90,9 +90,9 @@
       <header>
         <div class="header-callout">
           <div class="header-callout__content">
-            Sign up for <span>Dedicated Infrastructure</span> early access
-            <a class="header-callout__learn-more" href="#managed-infra">
-              Learn more</a
+            🤩 We are <span>hiring!</span> 
+            <a class="header-callout__learn-more" href="https://boards.greenhouse.io/textile">
+              Current job openings</a
             >
           </div>
         </div>
@@ -101,12 +101,11 @@
             <div class="collection">
               <a class="logo" href="https://textile.io/"></a>
               <div class="links navigation">
-                <a class="link white" href="https://blog.textile.io/">Blog.</a>
-                <a class="link white" href="https://slack.textile.io/"
-                  >Slack.</a
-                >
-                <a class="link white" href="https://docs.textile.io">Docs.</a>
-              </div>
+                <a class="link white" href="https://boards.greenhouse.io/textile">Jobs.</a>
+                <a class="link white" href="https://www.youtube.com/watch?v=d1kpID1LSRE&feature=emb_title">Vision.</a>
+                <a class="link white" href="https://www.notion.so/textile/48bf90d42b84407a840849bc110bb58f">Team.</a>
+                <a class="link white" href="https://github.com/textileio">GitHub.</a>
+               <a class="link white" href="https://blog.textile.io">Blog.</a>
             </div>
           </div>
         </section>
@@ -141,7 +140,7 @@
                 >.
               </h3>
             </div>
-            <span class="section-hero__try">Try Textile free in the hub!</span>
+            <span class="section-hero__try">Try Textile free in the Hub!</span>
             <a
               class="cta-signup cta-signup--white"
               href="https://cloud.hub.textile.io"
@@ -268,87 +267,6 @@
             </div>
           </div>
         </secttion>
-
-        <section
-          id="managed-infra"
-          class="section-features managed-infra animated__blue-bg"
-        >
-          <div
-            class="shape shape1 lax"
-            data-lax-translate-y="0 0, 6000 2000"
-          ></div>
-          <div
-            class="shape shape2 lax"
-            data-lax-translate-y="0 0, 6000 2000"
-          ></div>
-          <div
-            class="shape shape3 lax"
-            data-lax-translate-y="0 0, 6000 2000"
-          ></div>
-          <div
-            class="features-svg lax"
-            data-lax-translate-y="0 0, 6000 2000"
-          ></div>
-
-          <div class="container">
-            <p class="managed-infra--divider">Dedicated Infrastructure</p>
-            <h1 class="managed-infra--title">Hosted Filecoin</h1>
-            <div class="more managed-infra--group">
-              <div class="managed-infra--features">
-                <ul>
-                  <li>Dedicated Lotus node</li>
-                  <li>Dedicated Powergate for Application Development</li>
-                  <li>Filecoin Deal Notification</li>
-                  <li>Detailed Monitoring</li>
-                </ul>
-                <ul>
-                  <li>Stack Alerting</li>
-                  <li>Advanced Security Settings</li>
-                  <li>Backups & Disaster Recovery</li>
-                  <li>One Week Trial</li>
-                </ul>
-              </div>
-              <div class="managed-infra--signup">
-                <a
-                  class="cta-signup"
-                  target="_blank"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSe6zLx6PC9BDw3swKn1rPNbVFVgfIxZVFgabuWTnb0MSddl4A/viewform"
-                >
-                  Request Early Access
-                </a>
-              </div>
-            </div>
-
-            <h1 class="managed-infra--title">Hosted IPFS</h1>
-            <div class="more managed-infra--group">
-              <div class="managed-infra--features">
-                <ul>
-                  <li>Dedicated IPFS node & gateway</li>
-                  <li>
-                    Dedicated ThreadDB node & gateway for application
-                    development
-                  </li>
-                  <li>Dedicated Buckets API for flexible object storage</li>
-                  <li>Dedicated Pinning API for blockchain development</li>
-                  <li>Detailed Monitoring</li>
-                  <li>Stack Alerting</li>
-                  <li>Advanced Security Settings</li>
-                  <li>Backups & Disaster Recovery</li>
-                  <li>One Week Trial</li>
-                </ul>
-              </div>
-              <div class="managed-infra--signup">
-                <a
-                  class="cta-signup"
-                  target="_blank"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdX18GJ-EdRnpRRZH0iX7VJ0RtPU7hvSfYtRNdJc9Evkzm_CA/viewform"
-                >
-                  Request Early Access
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <footer class="section-footer">
@@ -358,18 +276,15 @@
             <div class="links navigation">
               <a
                 class="link grey"
-                href="https://www.youtube.com/watch?v=d1kpID1LSRE&feature=emb_title"
-                >Vision.</a
-              >
-              <a class="link grey" href="https://textile.breezy.hr/"
-                >Careers.</a
+                href="https://docs.textile.io/"
+                >Docs.</a
               >
               <a class="link grey" href="https://twitter.com/textileio"
                 >Twitter.</a
               >
-              <a class="link grey" href="https://github.com/textileio"
-                >Github.</a
-              >
+              <a class="link grey" href="https://slack.textile.io"
+              >Slack.</a
+            >
             </div>
           </div>
         </div>
@@ -393,33 +308,6 @@
       }
       hljs.initHighlightingOnLoad();
       hljs.initLineNumbersOnLoad();
-
-      window.onload = function () {
-        // Parallax Code
-        lax.setup(); // init
-        const updateLax = () => {
-          lax.update(window.scrollY);
-          window.requestAnimationFrame(updateLax);
-        };
-        window.requestAnimationFrame(updateLax);
-      };
-      // smoth scroll
-      const links = document.querySelectorAll(".header-callout__content a");
-
-      for (const link of links) {
-        link.addEventListener("click", clickHandler);
-      }
-      console.log(links);
-      function clickHandler(e) {
-        e.preventDefault();
-        const href = this.getAttribute("href");
-        const offsetTop = document.querySelector(href).offsetTop;
-
-        scroll({
-          top: offsetTop,
-          behavior: "smooth",
-        });
-      }
     </script>
   </body>
 </html>

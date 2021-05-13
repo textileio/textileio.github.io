@@ -21,7 +21,7 @@ header {
       text-decoration: none;
       &:after {
         margin-left: -15px;
-        transition: all 0.5s;
+        // transition: all 0.5s;
         content: " →";
         opacity: 0;
       }
