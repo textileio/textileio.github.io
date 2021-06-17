@@ -291,10 +291,11 @@
       </footer>
     </div>
 
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css"
-    />
     <script src="js/main.min.js"></script>
+    <script>
+      if (link.indexOf("https://www") == -1) {
+        location.href = "https://www.textile.io/"
+      }
+    </script>
   </body>
 </html>
