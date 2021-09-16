@@ -41,6 +41,18 @@
       }
     }
   }
+  &--pink {
+    margin-top: 30px;
+    max-width: 340px;
+    color: $blue;
+    background-color: $pink;
+    &:hover {
+      background-color: $white;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
   @media (max-width: $mobile) {
     &--white {
       width: 100%;
