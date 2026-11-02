@@ -4,6 +4,7 @@
   "description": "textile.io",
   "license": "We Are Set, Inc",
   "scripts": {
+    "test": "node --test tests/*.test.cjs",
     "start": "run-p serve watch:*",
     "clean": "rimraf dist/{css/*,js/*,images/*}",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
