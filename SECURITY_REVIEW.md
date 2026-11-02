@@ -54,3 +54,20 @@ current domain ownership.
 
 Bucket identifier reference:
 https://github.com/textileio/go-buckets#creating-a-bucket
+
+## July 2019 homepage restoration
+
+The homepage was subsequently restored from the July 7, 2019 snapshot,
+`f63c1fb6825a1c46282a30b3a203e0e25ae590b3`, using new commits on `master`
+and `gh-pages`. Later history and the publication security settings were retained.
+
+The restoration adapts asset paths for the Pages root and uses the original
+code-example tab controller as a local script. The obsolete CDN syntax-highlighting
+scripts were not restored. Code examples remain readable as plain code and scroll
+within their cards, with a small layout adjustment to fit mobile screens.
+The historical package manifest and deployment workflow were not restored.
+
+The desktop and mobile browser checks exercise the hero, documentation CTA,
+code-example tabs, font loading, and page width. They check for JavaScript errors,
+missing resources, and unexpected external requests. The existing hosting tests
+and a scan of the restored static artifact were also run for this restoration.

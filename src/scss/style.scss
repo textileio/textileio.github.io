@@ -1,6 +1,6 @@
-@import "abstracts/variables", "abstracts/include-media";
+@import "abstracts/variables",
+        'abstracts/include-media';
 
-@import "abstracts/animations";
 /*--------------------------------------------------------------
 1.0 Normalize
 	* normalize.css v7.0.0 | MIT License
@@ -13,8 +13,6 @@
 --------------------------------------------------------------*/
 @import "base/base";
 
-@import "base/buttons";
-
 @import "base/helpers";
 
 @import "layout/header";
@@ -23,7 +21,7 @@
 
 @import "layout/features";
 
-@import "layout/clients";
+@import "layout/code";
 
 @import "layout/apps";
 

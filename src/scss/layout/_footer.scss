@@ -1,55 +1,53 @@
 @import "../abstracts/variables";
 
 .section-footer {
-  width: 100vw;
-  display: flex;
-  background-color: #f7fbff;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: calc(-100vw * 0.2);
-  .wrapper {
-    height: 15vw;
-    .collection {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      .logo {
-        height: calc(0.385 * 9.4vw);
-        width: 9.4vw;
-        background: url(/images/logo-dark.png) no-repeat center center;
-        background-size: contain;
-        display: flex;
-      }
-      .links {
-        display: flex;
-        justify-self: flex-end;
-        align-items: center;
-        .link {
-          margin-left: 12px;
-          @include link($grey);
-        }
-      }
-    }
-  }
-  @media (max-width: $mobile) {
-    .wrapper {
-      .collection {
-        margin-top: 20px;
-        width: 100%;
-        .logo {
-          height: 40px;
-          width: 128px;
-        }
-        .links {
-          .link {
-            margin-left: 10px;
-            font-size: 14px;
-          }
-        }
-      }
-    }
-  }
+	width: 100vw;
+	height: 248px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.wrapper {
+		height: 15vw;
+		.collection {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			.logo {
+				height: calc(0.385 * 9.4vw);
+				width: 9.4vw;
+				background: url(/images/logo-dark.png) no-repeat center center;
+				background-size: contain;
+				display: flex;
+			}
+			.links {
+				display: flex;
+				justify-self: flex-end;
+				align-items: center;
+				.link {
+					margin-left: 12px;
+				}
+			}
+		}
+	}
+	@media (max-width: $mobile) {
+		.wrapper {
+			.collection {
+				margin-top: 20px;
+				width: 100%;
+				.logo {
+					height: 40px;
+					width: 128px;
+				}
+				.links {
+					.link {
+						margin-left: 10px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
 }
